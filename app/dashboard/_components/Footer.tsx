@@ -3,7 +3,7 @@ import { Twitter, Send, HelpCircle } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="border-t bg-background">
+    <footer className="border-t bg-[#25252580]">
       <div className="flex h-14 items-center justify-between px-6">
         <div className="flex items-center gap-2">
           <span className="text-sm text-muted-foreground">© SplBundler</span>

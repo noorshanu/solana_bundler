@@ -142,7 +142,7 @@ export default function RevokeAuthorityPage() {
                                         />
                                         <Button variant="outline"  size={'md'}
                                             onClick={()=>revokeAuthority('mint')}
-                                            className="bg-purple-500 hover:bg-purple-600" disabled={isLoading}>
+                                            className="bg-btn hover:bg-purple-600" disabled={isLoading}>
                                             {isLoading ? "Revoking..." : "Revoke Mint Authority"}
                                         </Button>
                                     </form>
@@ -184,7 +184,7 @@ export default function RevokeAuthorityPage() {
                                         />
                                         <Button variant="outline"  size={'md'}
                                             onClick={()=>revokeAuthority('freeze')}
-                                            className="bg-purple-500 hover:bg-purple-600" disabled={isLoading}>
+                                            className="bg-btn hover:bg-purple-600" disabled={isLoading}>
                                             {isLoading ? "Revoking..." : "Revoke Freeze Authority"}
                                         </Button>
                                     </form>

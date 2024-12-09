@@ -479,7 +479,7 @@ export default function CreateTokenPage() {
                                 <Button
                                   type="button"
                                   variant="link"
-                                  className="text-purple-400 h-auto p-0"
+                                  className="text-[#25a96b] h-auto p-0"
                                   onClick={handleImageUpload}
                                 >
                                   upload image
@@ -717,7 +717,7 @@ export default function CreateTokenPage() {
                     <div className="flex justify-between">
                       <Button
                        variant="outline"  size={'md'}
-                        className="bg-purple-500 hover:bg-purple-600"
+                        className="bg-btn hover:bg-purple-600"
                         disabled={isLoading}
                         onClick={() => createTokenMetadata()}
                       >

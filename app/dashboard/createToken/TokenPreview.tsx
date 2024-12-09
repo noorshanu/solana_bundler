@@ -59,7 +59,7 @@ export default function TokenPreview({ formData }: TokenPreviewProps) {
             <div>
               <div className="text-sm text-white/50 mb-1">PROGRAM</div>
               <div className="flex items-center gap-2">
-                <span className="text-purple-400">SPL Token</span>
+                <span className="text-[#25a96b]">SPL Token</span>
                 {/* <Button variant="ghost" size="icon" className="h-4 w-4 text-white/50">
                   <Copy className="h-3 w-3" />
                 </Button> */}
