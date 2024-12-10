@@ -8,21 +8,24 @@ import { TITLE_TAILWIND_CLASS } from '@/utils/constants';
 export default function HeroSection() {
     return (
         <section className='flex flex-col items-center justify-center leading-6 mt-[3rem]' aria-label="Nextjs Starter Kit Hero">
-            <h1 className={`${TITLE_TAILWIND_CLASS} scroll-m-20 font-semibold tracking-tight text-center max-w-[1120px] bg-gradient-to-b dark:text-white`}>
-                Nextjs Starter Kit: Build & Ship Fast
-            </h1>
-            <p className="mx-auto max-w-[700px] text-gray-500 text-center mt-2 dark:text-gray-400">
-                The Ultimate Nextjs 14 Starter Kit for quickly building your SaaS, giving you time to focus on what really matters
-            </p>
-            <div className="flex justify-center items-center gap-3">
+            <div className=' flex justify-between items-center gap-4 flex-col sm:flex-row max-w-max sm:max-w-[1120px] mb-4'>
+                <div className=' w-full sm:w-1/2'>
+                    <h1 className='text-[4rem] pb-4 font-semibold tracking-tight  '>SPL BUNDLER</h1>
+                    <p className=' mt-4'>A cutting-edge tool designed to optimize Solana transactions, Solana Bundler aggregates multiple transactions into a single, cost-efficient bundle. Maximize speed, reduce fees, and streamline your on-chain operations with seamless integration and superior performance. Perfect for developers, traders, and projects seeking efficiency in the Solana ecosystem.</p>
+                    <div className="flex justify-start items-center gap-3">
                 <Link href="/dashboard" className="mt-5">
-                    <Button className="animate-buttonheartbeat rounded-md bg-blue-600 hover:bg-blue-500 text-sm font-semibold text-white">
-                        Get Started
+                    <Button className="animate-buttonheartbeat rounded-md bg-btn text-sm font-semibold text-white">
+                        Login
+                    </Button>
+                </Link>
+                <Link href="/dashboard" className="mt-5">
+                    <Button className="animate-buttonheartbeat rounded-md bg-btn text-sm font-semibold text-white">
+                        Procced
                     </Button>
                 </Link>
 
                 <Link
-                    href="https://discord.gg/HUcHdrrDgY"
+                    href=""
                     target='_blank'
                     className="mt-5"
                     aria-label="Join Discord (opens in a new tab)"
@@ -32,37 +35,20 @@ export default function HeroSection() {
                         <ArrowRight className='w-4 h-4' aria-hidden="true" />
                     </Button>
                 </Link>
-                <Link
-                    href="https://github.com/michaelshimeles/nextjs14-starter-template"
-                    target='_blank'
-                    className='animate-buttonheartbeat border p-2 rounded-full mt-5 hover:dark:bg-black hover:cursor-pointer'
-                    aria-label="View NextJS 14 Starter Template on GitHub"
-                >
-                    <Github className='w-5 h-5' aria-hidden="true" />
-                </Link>
+            
             </div>
-            <div>
-                <div className="relative flex max-w-6xl justify-center overflow-hidden mt-7">
-                    <div className="relative rounded-xl">
-                        <Image
-                            src="https://utfs.io/f/31dba2ff-6c3b-4927-99cd-b928eaa54d5f-5w20ij.png"
-                            alt="Nextjs Starter Kit Dashboard Preview"
-                            width={1100}
-                            height={550}
-                            priority={true}
-                            className="block rounded-[inherit] border object-contain shadow-lg dark:hidden"
-                        />
-                        <Image
-                            src="https://utfs.io/f/69a12ab1-4d57-4913-90f9-38c6aca6c373-1txg2.png"
-                            width={1100}
-                            height={550}
-                            alt="Nextjs Starter Kit Dark Mode Dashboard Preview"
-                            priority={true}
-                            className="dark:block rounded-[inherit] border object-contain shadow-lg hidden"
-                        />
-                        <BorderBeam size={250} duration={12} delay={9} />
-                    </div>
                 </div>
+                <div className=' w-full sm:w-1/2'>
+                    <Image src='/hero.png' height={500} width={400} alt='' className=' mx-auto'/>
+                </div>
+            </div>
+            {/* <h1 className={`${TITLE_TAILWIND_CLASS} scroll-m-20 font-semibold tracking-tight text-center max-w-[1120px] bg-gradient-to-b dark:text-white mt-6`}>
+            Launch your first token and go to the moon
+            </h1> */}
+          
+           
+            <div>
+         
             </div>
         </section>
     )

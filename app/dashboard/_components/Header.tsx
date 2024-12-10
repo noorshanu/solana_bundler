@@ -4,7 +4,7 @@ import { AlertTriangle } from 'lucide-react'
 import Link from 'next/link'
 import { Banknote, Folder, HomeIcon, Settings } from 'lucide-react'
 import { UserButton } from '@clerk/nextjs'
-import Noor from "./logo.webp"
+
 
 import Image from "next/image"
 export default function Header() {
@@ -19,7 +19,7 @@ export default function Header() {
       <div className="flex h-14 items-center justify-between px-6 bg-[#25252580]">
         <div className="flex items-center gap-2">
         
-          <Image   src={Noor}
+          <Image   src="/logo.webp"
                             alt="Nextjs Starter Kit Dashboard Preview"
                             width={150}
                             height={150}
@@ -34,7 +34,7 @@ export default function Header() {
             </Button>
           </Link>
           <UserButton />
-           <ModeToggle />
+           {/* <ModeToggle /> */}
         </div>
       </div>
     </div>
