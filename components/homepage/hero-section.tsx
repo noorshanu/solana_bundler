@@ -1,9 +1,8 @@
 import { ArrowRight, Github } from 'lucide-react';
 import Link from "next/link";
-import { BorderBeam } from "../magicui/border-beam";
 import { Button } from "../ui/button";
 import Image from 'next/image';
-import { TITLE_TAILWIND_CLASS } from '@/utils/constants';
+
 
 export default function HeroSection() {
     return (
@@ -14,12 +13,12 @@ export default function HeroSection() {
                     <p className=' mt-4'>A cutting-edge tool designed to optimize Solana transactions, Solana Bundler aggregates multiple transactions into a single, cost-efficient bundle. Maximize speed, reduce fees, and streamline your on-chain operations with seamless integration and superior performance. Perfect for developers, traders, and projects seeking efficiency in the Solana ecosystem.</p>
                     <div className="flex justify-start items-center gap-3">
                 <Link href="/dashboard" className="mt-5">
-                    <Button className="animate-buttonheartbeat rounded-md bg-btn text-sm font-semibold text-white">
+                    <Button className="a rounded-md bg-btn text-sm font-semibold text-white">
                         Login
                     </Button>
                 </Link>
                 <Link href="/dashboard" className="mt-5">
-                    <Button className="animate-buttonheartbeat rounded-md bg-btn text-sm font-semibold text-white">
+                    <Button className=" rounded-md bg-btn text-sm font-semibold text-white">
                         Procced
                     </Button>
                 </Link>
@@ -39,7 +38,7 @@ export default function HeroSection() {
             </div>
                 </div>
                 <div className=' w-full sm:w-1/2'>
-                    <Image src='/hero.png' height={500} width={400} alt='' className=' mx-auto'/>
+                    <Image src='/hero.png' height={500} width={400} alt='Illustration of Solana Bundler' className=' mx-auto' priority/>
                 </div>
             </div>
             {/* <h1 className={`${TITLE_TAILWIND_CLASS} scroll-m-20 font-semibold tracking-tight text-center max-w-[1120px] bg-gradient-to-b dark:text-white mt-6`}>
