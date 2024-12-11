@@ -29,6 +29,7 @@ export default clerkMiddleware(async (auth, req) => {
   } 
 
 });
+
 export const config = {
   matcher: [
     // Skip Next.js internals and all static files, unless found in search params
@@ -36,4 +37,4 @@ export const config = {
     // Always run for API routes
     '/(api|trpc)(.*)',
   ],
-}
+};

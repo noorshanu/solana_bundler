@@ -32,7 +32,7 @@ import { sendSignedTransactionLegacy } from "@/app/lib/transactions";
 import { TokenMetadata } from "@/app/model/TokenMetadata";
 import { formatAmmKeysById } from "@/app/lib/formatAmmKeysById";
 
-import {performRaydiumSell} from '@/app/lib/instructions'
+import {performRaydiumSell} from '@/app/lib/Instructions'
 
 
 export async function POST(request: Request) {
